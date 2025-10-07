@@ -32,7 +32,7 @@ const app = new Elysia()
       routesDir: "./routes",
     }),
   )
-  .get("/", () => ({ status: "ok" }), {
+  .get("/", () => ({ status: "ok 1" }), {
     response: t.Object({
       status: t.String({
         description: "Returns ok for health check",
